@@ -1,0 +1,399 @@
+// Custom variables
+@import "custom/variables";
+@import "projects";
+
+// Core custom
+@import "custom/variables";
+
+
+// Core variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Reset
+
+@import "bootstrap/print";
+
+// Core CSS
+@import "bootstrap/scaffolding";
+@import "bootstrap/grid";
+
+// Utility classes
+@import "bootstrap/utilities";
+@import "bootstrap/responsive-utilities";
+
+@font-face {
+    font-family: 'socialicoregular';
+    src: url('socialico-webfont.eot');
+    src: url('socialico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('socialico-webfont.woff2') format('woff2'),
+         url('socialico-webfont.woff') format('woff'),
+         url('socialico-webfont.ttf') format('truetype'),
+         url('socialico-webfont.svg#socialicoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body {
+	font-size:99%;
+    background-color: white;
+}
+
+::selection {
+    background: lighten( $color-black, 15%);
+    color: white;
+    text-shadow: none;
+ }
+
+.navigation {
+	margin-top: 4em;
+	margin-bottom: 2.5em;
+}	
+
+.topnav {
+	float: right !important;
+	margin-top: 2.7em;
+}
+
+.logo {
+	background-image: url(img/logo.svg);
+	background-repeat: no-repeat;
+	height: 5em;
+	width: 20em;
+	float: left;
+	cursor: pointer;
+}	
+
+.logo:hover {
+	background-image: url(img/logo_hover.svg);
+	background-repeat: no-repeat;
+	height: 5em;
+	width: 20em;
+}
+
+.logo:active {   
+	background-image: url(img/logo_hover.svg);
+	background-repeat: no-repeat;
+	height: 5em;
+	width: 20em;
+}
+
+.navigation ul li {
+	display: inline;
+}
+
+.navigation ul li a {
+	font-family: 'Helvetica Neue', sans-serif;
+	font-weight: 800;
+	font-size: 1.4em;
+	font-size: 1.4em;
+	color: $color-black;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	padding: 0.3em;
+}
+
+.navigation ul li a:hover {
+	color: lighten( $color-black, 90%);
+	text-decoration: none;
+}	
+
+.navigation li.current a {
+	color: $color-black;
+	background-color: $color-black;
+	text-decoration: none;	
+}
+
+.navigation li:nth-child(1) {
+	margin-right: 2.5em
+}
+
+.navigation li:nth-child(2) {
+	margin-right: 2.5em
+}
+
+
+.footerlogo {
+	background-image: url(img/logo.svg);
+	background-repeat: no-repeat;
+	height: 5em;
+	width: 20em;
+	cursor: pointer;
+}	
+
+.footerlogo:hover {
+	background-image: url(img/logo_hover.svg);
+	background-repeat: no-repeat;
+	height: 5em;
+	width: 20em;
+}	
+
+.footerlogo:active {
+	background-image: url(img/logo_hover.svg);
+	background-repeat: no-repeat;
+	height: 5em;
+	width: 20em;
+}
+
+footer {
+	margin-top: 6em;
+	margin-bottom: 3em;
+}
+
+.footer_navigation ul li {
+	display: inline-block;
+}
+
+.footer_navigation ul {
+	padding: 0;
+	text-align: center;
+	margin-top: 3.4em;
+}	
+
+.footer_navigation ul li a {
+	font-family: 'helvetica neue', sans-serif;
+	font-weight: 800;
+	font-size: 1.4em;
+	color: $color-black;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	text-align:  center;
+	padding: 0.3em;
+}
+
+.footer_navigation ul li a:hover {
+	color: lighten( $color-black, 90%);
+	text-decoration: none;
+	padding: 0.3em;
+}	
+
+.footer_navigation li.current a {
+	color: $color-black;
+	background-color: $color-black;
+	padding: 0.3em;
+	text-decoration: none;	
+}
+
+.footer_navigation li:nth-child(1) {
+	margin-right: 2.3em
+}	
+
+.footer_navigation li:nth-child(2) {
+	margin-right: 2.3em
+}
+
+.space {
+	margin-top: 5em;
+}	
+
+h1 {
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 800;
+    font-size: 2.2em;
+    line-height: 125%;
+    margin-bottom: 2em;
+	color: lighten( $color-black, 15%);
+	letter-spacing:  0.05em;
+	text-transform: uppercase;
+}
+
+
+p {
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 400;
+    font-size: 1.7em; 
+	letter-spacing: 0.06em;
+	line-height: 135%;
+	color: lighten( $color-black, 5%);
+}    
+
+.description_home {
+	max-width: 23em;
+}
+
+.description {
+	font-size: 1.8em;
+	letter-spacing: 0.06em;
+	margin-bottom: 3em;
+	max-width: 35em;
+}	
+
+.info {
+	margin-top: 3em;
+}	
+
+.email {
+	font-family: 'helvetica neue', sans-serif;
+	font-size: 1.4em;
+	letter-spacing: 0.15em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	color: lighten( $color-black, 15%);
+	cursor: pointer;
+	text-align: center;
+	display: block;
+	width: 16em;
+	border: 0.2em solid lighten( $color-black, 15%);
+}	
+
+.email:hover {
+	background-color: lighten( $color-black, 15%);
+	color: white;
+	text-decoration: none;
+}	
+
+.social {
+	font-family: 'socialicoregular';
+	margin-top: 0.5em;
+	margin-bottom: 1.5em;
+	margin-right: 0.5em;
+	float: left;
+	font-size: 2.6em;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	color: lighten($color-black, 15%);
+	cursor: pointer;
+	text-align: center;
+	width: 2em;
+	border: 0.1em solid lighten( $color-black, 15%);
+}	
+
+.social:hover {
+	background-color: lighten( $color-black, 15%);
+	color: white;
+	text-decoration: none;
+}
+
+
+.delimitador{
+	width:100%;
+	margin:auto;
+	margin-bottom: 3.5em;
+}
+.contenedor{
+	height:0px;
+	width:100%;
+	/*max-width:560px; /* Así establecemos el ancho máximo (si lo queremos) */
+	padding-top:56.25%; /* Relación: 16/9 = 56.25% */
+	position:relative;
+}
+
+iframe{
+		position:absolute;
+		height:100%;
+		width:100%;
+		top:0px;
+		left:0px;
+}
+
+@media screen and (max-width: 990px) {
+	.info {
+		margin-top: 6em;
+	}	
+}	
+
+@media screen and (max-width: 760px) {
+	.topnav {
+		float: none !important;
+		padding-left: 0;
+		text-align: center;
+		margin-top: 3em;
+	}	
+	
+	.navigation {
+		margin-bottom: 1.3em;
+	}
+	
+	.navigation ul li a {
+		font-size: 1.4em;
+		letter-spacing: 0.3em;
+	}	
+	
+	.navigation li:nth-child(1) {
+	margin-right: 2.3em
+	}
+	
+	.navigation li:nth-child(2) {
+	margin-right: 2.3em
+	}
+	
+	.logo {
+		display: block;
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}	
+	.main {
+		display: none;
+	}	
+	
+}
+
+@media screen and (max-width: 660px) {
+	
+	.logo {
+		height: 5em;
+		width: 20em;
+	}	
+
+	.logo:hover {
+		height: 5em;
+		width: 20em;
+	}
+	
+	.info {
+		margin-top: 5em;
+	}	
+	
+	
+	.footerlogo {
+		background-image: url(img/logo.svg);
+		height: 5em;
+		width: 20em;
+	}
+	
+	.footerlogo:hover {
+		height: 5em;
+		width: 20em;
+	}	
+	
+	.footer_navigation ul li a {
+		font-size: 1.2em;
+		letter-spacing: 0.12em;
+	}	
+	
+	.footer_navigation li:nth-child(1) {
+	margin-right: 1em
+	}
+	
+	.footer_navigation li.current a {
+		border-bottom: none;
+	}
+}		
+
+@media screen and (max-width: 400px) {
+	.topnav {
+		float: none !important;
+		padding-left: 0;
+		margin-top: 3em;
+	}	
+	
+	.navigation {
+		margin-bottom: 1.3em;
+	}
+	
+	.navigation ul li a {
+		font-size: 1.3em;
+		letter-spacing: 0.1em;
+	}	
+	
+	.navigation li:nth-child(1) {
+	margin-right: 1.3em
+	}
+	
+	.navigation li:nth-child(2) {
+	margin-right: 1.3em
+	}
+}	
